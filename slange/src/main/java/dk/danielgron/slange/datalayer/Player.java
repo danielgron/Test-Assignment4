@@ -3,8 +3,10 @@ package dk.danielgron.slange.datalayer;
 import jdk.jshell.spi.ExecutionControl;
 
 import java.util.LinkedList;
+import java.util.List;
 
 public class Player {
+    private boolean alive = true;
     private String name;
     private LinkedList<Point> snake;
     private int id;
@@ -13,6 +15,14 @@ public class Player {
     public int getId(){
         return id;
     };
+
+    public boolean getAlive(){
+        return alive;
+    }
+
+    public void setAlive(boolean alive){
+        this.alive = alive;
+    }
 
     public Player(int id){
         snake = new LinkedList<>();
@@ -30,6 +40,10 @@ public class Player {
     public boolean setHead(Point p){
         snake.addFirst(p);
         return true;
+    }
+
+    public List<Point> getSnake(){
+        return snake;
     }
 
 

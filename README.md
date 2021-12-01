@@ -1,6 +1,41 @@
 # Test-Assignment4
 
-A: Snake game: Make a classic snake game using TDD. To remind you the (minimum) rules of snake (you can make more features if you like):
+Answer the following questions about Mockito. Use code examples in your explanations.
+
+•	How do you verify that a mock was called?
+
+verify(bar, atLeast(1)).method();
+
+•	How do you verify that a mock was NOT called?
+
+verify(bar, never()).method();
+
+•	How do you specify how many times a mock should have been called?
+
+verify(bar, times(x)).method();
+
+
+•	How do you verify that a mock was called with specific arguments?
+
+Bar bar = mock(Bar.class);
+bar.method("test");
+verify(bar).method("test");
+
+•	How do you use a predicate to verify the properties of the arguments given to a call to the mock?
+
+?
+Bar bar = mock(Bar.class);
+bar.method("test");
+verify(bar).method(anyString());
+
+
+# A: Snake game: Make a classic snake game using TDD. To remind you the (minimum) rules of snake (you can make more features if you like):
+## SpotBugs (FindBugs), PITest added to project as per requirements
+
+
+
+
+
 
 •	You control a the direction of a continuously moving snake, going up, down, left or right – the snake cannot stop moving.
 
