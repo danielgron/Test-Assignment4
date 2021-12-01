@@ -1,6 +1,6 @@
 # Test-Assignment4
 
-Answer the following questions about Mockito. Use code examples in your explanations.
+## Answer the following questions about Mockito. Use code examples in your explanations.
 
 •	How do you verify that a mock was called?
 
@@ -50,7 +50,7 @@ Beyond this, the required features are not complete as of handin
 
 •	You control a the direction of a continuously moving snake, going up, down, left or right – the snake cannot stop moving.
 
-•	At any point in time, there is an apple somewhere on the playing field.
+•	At any point in time, there is an apple somewhere on the playing field.## 
 
 •	When the snake’s head runs into the apple, the snake’s body gets longer.
 
