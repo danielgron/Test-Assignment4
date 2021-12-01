@@ -4,13 +4,19 @@ Answer the following questions about Mockito. Use code examples in your explanat
 
 •	How do you verify that a mock was called?
 
+Using atLeast ensures called >= x times
+
 verify(bar, atLeast(1)).method();
 
 •	How do you verify that a mock was NOT called?
 
+Never (short hand for times(0))
+
 verify(bar, never()).method();
 
 •	How do you specify how many times a mock should have been called?
+
+times(x) sets a specific number of calls
 
 verify(bar, times(x)).method();
 
@@ -27,15 +33,20 @@ verify(bar).method("test");
 Bar bar = mock(Bar.class);
 bar.method("test");
 verify(bar).method(anyString());
+?
 
 
 # A: Snake game: Make a classic snake game using TDD. To remind you the (minimum) rules of snake (you can make more features if you like):
 ## SpotBugs (FindBugs), PITest added to project as per requirements
 
+![image](./spotbugs.png)
+
+![image](./pitest.png)
+
+![image](./jacoco.png)
 
 
-
-
+Beyond this, the required features are not complete as of handin
 
 •	You control a the direction of a continuously moving snake, going up, down, left or right – the snake cannot stop moving.
 
